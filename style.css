@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.hero {
+  background-color: #f2f2f2;
+  padding: 40px;
+  text-align: center;
+}
+.parserBody {
+  height: 100vh;
+  padding: 100px;
+}
+.hero input[type="file"] {
+  display: none;
+}
+
+.hero label {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.fileNameDisplay {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 10px 0px;
+  cursor: pointer;
+  margin: 0 0px;
+  /* margin-top: 20px; */
+
+  width: 100%;
+  font-size: 20px;
+}
+
+.hero button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.jsoneditor-poweredBy {
+  display: none;
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  width: 500px;
+  height: 200px;
+}
+form p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 170px;
+  color: #ffffff;
+  font-family: Arial;
+}
+form input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+form button {
+  margin: 0;
+  color: #fff;
+  background: #16a085;
+  border: none;
+  width: 508px;
+  height: 35px;
+  margin-top: -20px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #117a60;
+  transition: all 0.2s ease;
+  outline: none;
+}
+form p {
+  border: 4px dashed #fff;
+}
+form button:hover {
+  background: #149174;
+  color: #0c5645;
+}
+form button:active {
+  border: 0;
+}
