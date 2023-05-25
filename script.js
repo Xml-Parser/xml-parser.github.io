@@ -1,6 +1,7 @@
 const generateBtn = document.querySelector(".generateBtn");
 const fileInput = document.getElementById("fileInput");
 const fileNameDisplay = document.querySelector(".fileNameDisplay");
+const loader = document.querySelector("#js-preloader");
 
 fileInput.addEventListener("change", function () {
   const fileName = fileInput.files[0].name;
@@ -8,6 +9,7 @@ fileInput.addEventListener("change", function () {
 });
 generateBtn.addEventListener("click", (e) => {
   console.log("clicked");
+  loader.classList.remove("loaded");
   e.preventDefault();
   postData();
 });
@@ -33,6 +35,7 @@ function postData() {
     });
 }
 function displayJson(jsonData) {
+  loader.classList.add("loaded");
   var container = document.getElementById("jsonEditor");
   var options = {
     mode: "tree",
