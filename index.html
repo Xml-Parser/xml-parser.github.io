@@ -52,11 +52,49 @@ https://templatemo.com/tm-568-digimedia
 
     <!-- Pre-header End -->
     <style>
+      .dropbtn {
+        background-color: transparent;
+        color: black;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        background-color: white;
+        position: static;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: None;
+        position: absolute;
+
+        background-color: transparent;
+        min-width: 160px;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+
+        padding: 5px 5px 5px 15px;
+        text-decoration: none;
+        display: block;
+      }
+      
       .custom-heading {
         font-size: 40px; /* Adjust the value as per your preference */
-        font-family: "Open Sans", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: #000;
       }
-    </style>
+      .dropdown-content a:hover {background-color: #fa65b1;color: #000;}
+      
+      .dropdown:hover .dropdown-content {display: block;   background-color: white; color: black
+        ;}
+      .dropdown:hover .dropbtn {background-color: transparent;}
+      </style>
+
     <!-- ***** Header Area Start ***** -->
     <header
       class="header-area header-sticky wow slideInDown"
@@ -69,18 +107,26 @@ https://templatemo.com/tm-568-digimedia
             <nav class="main-nav">
               <!-- ***** Logo Start ***** -->
               <a href="index.html" class="logo">
-                <center>DigiXML</center>
+                <center <h2 class="custom-heading">
+                  DigiXML
+              </center>
               </a>
               <!-- ***** Logo End ***** -->
               <!-- ***** Menu Start ***** -->
+              
               <ul class="nav">
                 <li class="scroll-to-section">
                   <a href="#top" class="active">Home</a>
                 </li>
                 <li class="scroll-to-section"><a href="#about">About</a></li>
-                <li class="scroll-to-section">
-                  <a href="#services">Services</a>
-                </li>
+                <li class="dropdown">
+                  <a href="#services" class="dropbtn">Services</a>
+                  <div class="dropdown-content">
+                    <a href="/xmltojson.html">XML to JSON</a>
+                    <a href="#">JSON to XML</a>
+                    <a href="#">Formatted XML to Code</a>
+                    <a href="#">Raw XML to Code</a>
+                  </div>
                 <li class="scroll-to-section">
                   <a href="#contact">Contact</a>
                 </li>
@@ -147,7 +193,7 @@ https://templatemo.com/tm-568-digimedia
                   data-wow-duration="1s"
                   data-wow-delay="0.5s"
                 >
-                  <img src="assets/images/slider-dec.png" alt="" />
+                  <img src="assets/images/digiart.png" alt="" />
                 </div>
               </div>
             </div>
