@@ -112,6 +112,9 @@ body {
 .jsonEditorBtnCont button:active {
   border: 0;
 }
+
+
+
 .js-preloader {
   position: unset !important;
   width: 100%;
